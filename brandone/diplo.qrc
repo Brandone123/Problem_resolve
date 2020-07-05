@@ -1,0 +1,5 @@
+<RCC>
+     <qresource prefix="diplo">
+       <file>ENSAI.png</file>
+     </qresource>
+</RCC>

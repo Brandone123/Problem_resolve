@@ -1,0 +1,96 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'simplex.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(719, 509)
+        Form.setStyleSheet("background-color: rgb(252, 175, 62);")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(Form)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setObjectName("label_3")
+        self.verticalLayout.addWidget(self.label_3)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout.addWidget(self.label_2)
+        self.spinBoxVariables = QtWidgets.QSpinBox(Form)
+        self.spinBoxVariables.setMinimum(0)
+        self.spinBoxVariables.setObjectName("spinBoxVariables")
+        self.horizontalLayout.addWidget(self.spinBoxVariables)
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setObjectName("label")
+        self.horizontalLayout.addWidget(self.label)
+        self.spinBoxConstantes = QtWidgets.QSpinBox(Form)
+        self.spinBoxConstantes.setObjectName("spinBoxConstantes")
+        self.horizontalLayout.addWidget(self.spinBoxConstantes)
+        self.pushButtonGenerate = QtWidgets.QPushButton(Form)
+        self.pushButtonGenerate.setObjectName("pushButtonGenerate")
+        self.horizontalLayout.addWidget(self.pushButtonGenerate)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
+        self.label_4 = QtWidgets.QLabel(Form)
+        self.label_4.setObjectName("label_4")
+        self.horizontalLayout.addWidget(self.label_4)
+        self.comboBoxMaxMin = QtWidgets.QComboBox(Form)
+        self.comboBoxMaxMin.setObjectName("comboBoxMaxMin")
+        self.comboBoxMaxMin.addItem("")
+        self.comboBoxMaxMin.addItem("")
+        self.horizontalLayout.addWidget(self.comboBoxMaxMin)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem1)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem2)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem3)
+        self.verticalLayoutConstrains = QtWidgets.QVBoxLayout()
+        self.verticalLayoutConstrains.setObjectName("verticalLayoutConstrains")
+        self.horizontalLayout_2.addLayout(self.verticalLayoutConstrains)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem4)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+        spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem5)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem6)
+        self.labelResult = QtWidgets.QLabel(Form)
+        self.labelResult.setStyleSheet("color: rgb(78, 154, 6);\n"
+"font: 18pt \"Ubuntu\";")
+        self.labelResult.setText("")
+        self.labelResult.setObjectName("labelResult")
+        self.horizontalLayout_3.addWidget(self.labelResult)
+        spacerItem7 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem7)
+        self.verticalLayout.addLayout(self.horizontalLayout_3)
+        self.verticalLayout_2.addLayout(self.verticalLayout)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.label_3.setText(_translate("Form", "Algorithme de simplex"))
+        self.label_2.setText(_translate("Form", "Variables : "))
+        self.label.setText(_translate("Form", "Constantes :"))
+        self.pushButtonGenerate.setText(_translate("Form", "Generate"))
+        self.label_4.setText(_translate("Form", "Max ou Min ? :"))
+        self.comboBoxMaxMin.setItemText(0, _translate("Form", "Maximiser"))
+        self.comboBoxMaxMin.setItemText(1, _translate("Form", "Minimiser"))
+
